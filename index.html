@@ -4,48 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sunrise and Sunset Times</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
     <div class="container">
         <h1>Sunrise and Sunset Times</h1>
-        <label for="location">Select a City or State:</label>
-        <select name="location" id="location">
-            <option value="34.052235,-118.243683">Los Angeles (CA)</option>
-            <option value="33.53865,-112.18599">Glendale (AZ)</option>
-            <option value="32.776665,-96.796989">Dallas (TX)</option>
-            <option value="40.71427,-74.00597">New York City (NY)</option>
-            <option value="38.89511,-77.03637">Washington D.C. (DC)</option>
-        </select>
-        <input type="button" value="Get Sunrise and Sunset Times" onclick="getSunriseSunset()">
+        <form action="/" method="post">
+            <label for="location">Select a City or State:</label>
+            <select name="location" id="location">
+                <option value="34.05223,-118.24368" {% if location == "34.05223,-118.24368" %} selected {% endif %}>Los Angeles (CA)</option>
+                <option value="33.53865,-112.18599" {% if location == "33.53865,-112.18599" %} selected {% endif %}>Glendale (AZ)</option>
+                <option value="32.78306,-96.80667" {% if location == "32.78306,-96.80667" %} selected {% endif %}>Dallas (TX)</option>
+                <option value="40.71427,-74.00597" {% if location == "40.71427,-74.00597" %} selected {% endif %}>New York City (NY)</option>
+                <option value="38.89511,-77.03637" {% if location == "338.89511,-77.03637" %} selected {% endif %}>Washington D.C. (DC)</option>
+            </select>
+            <input type="submit" value="Get Sunrise and Sunset Times">
+        </form>
         <br>
-        <p><span class="sunrise">Sunrise:</span> <span id="sunriseText"></span></p>
-        <p><span class="sunset">Sunset:</span> <span id="sunsetText"></span></p>
+        {% if sunrise and sunset %}
+            <p><span class="sunrise">Sunrise:</span> {{ sunrise }}</p>
+            <p><span class="sunset">Sunset:</span> {{ sunset }}</p>
+        {% endif %}
     </div>
-    <p class="powered-by">Powered by <a href="https://sunrisesunset.io" target="_blank">SunriseSunset.io</a></p>
-
-    <script>
-        function getSunriseSunset() {
-            var location = document.getElementById("location").value;
-            var latlng = location.split(",");
-            var latitude = latlng[0];
-            var longitude = latlng[1];
-            var today = new Date();
-            var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
-            var apiURL = 'https://api.sunrisesunset.io/json?lat=' + latitude + '&lng=' + longitude + '&date=' + date;
-
-            fetch(apiURL)
-                .then(response => response.json())
-                .then(data => {
-                    var sunrise = data.results.sunrise;
-                    var sunset = data.results.sunset;
-                    document.getElementById("sunriseText").textContent = sunrise;
-                    document.getElementById("sunsetText").textContent = sunset;
-                })
-                .catch(error => {
-                    console.error('Error fetching sunrise and sunset times:', error);
-                });
-        }
-    </script>
+    <p class="powered-by"><a href="https://sunrisesunset.io" target="_blank">Powered by SunriseSunset.io</a></p>
 </body>
 </html>
