@@ -82,6 +82,14 @@ p {
     font-weight: bold; /* Bold font weight */
 }
 
+/* Current date styles */
+#currentDate {
+    margin-top: 20px; /* Top margin */
+    text-align: center; /* Center align */
+    font-size: 16px; /* Font size */
+    color: #666; /* Text color */
+}
+
 /* Credits container styles */
 .credits-container {
     text-align: center; /* Center align */
