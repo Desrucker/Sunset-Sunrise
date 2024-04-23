@@ -24,10 +24,17 @@ form {
     text-align: center;
 }
 
-label {
+.title {
+    text-align: center;
+    align-items: center;
     font-size: 18px;
-    margin-left: 100px;
     font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
+.title label {
+    display: block;
 }
 
 select {
