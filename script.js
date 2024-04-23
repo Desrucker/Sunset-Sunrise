@@ -24,12 +24,6 @@ function getSunriseSunset() {
             // Display sunrise and sunset times on the webpage
             document.getElementById("sunriseText").textContent = sunrise;
             document.getElementById("sunsetText").textContent = sunset;
-
-            // Get current date and format it
-            var currentDate = today.toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
-
-            // Display current date on the webpage
-            document.getElementById("currentDate").textContent = "Current Date: " + currentDate;
         })
         .catch(error => {
             // Handle errors if API call fails
