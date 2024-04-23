@@ -90,11 +90,14 @@ p {
 
 /* API link styles */
 .api-link {
+    font-size: 14px; /* Font size */
     margin-bottom: 5px; /* Bottom margin */
+    color: #666; /* Link color */
+    text-decoration: none; /* Remove underline */
 }
 
 .api-link a {
-    color: #007bff; /* Link color */
+    color: #666; /* Link color */
     text-decoration: none; /* Remove underline */
 }
 
@@ -104,7 +107,6 @@ p {
 
 /* Created by styles */
 .created-by {
-    font-style: italic; /* Italics */
-    font-size: 0.9em; /* Font size */
-    color: #888; /* Text color */
+    font-size: 12px; /* Font size */
+    color: #666; /* Text color */
 }
