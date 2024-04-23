@@ -70,4 +70,14 @@ p {
     margin-top: 20px;
     font-size: 14px;
     color: #666;
+    clear: both; /* Adding this to ensure proper alignment */
+}
+
+.powered-by a { /* Adjusting hyperlink style */
+    color: #666;
+    text-decoration: none;
+}
+
+.powered-by a:hover { /* Adjusting hyperlink hover style */
+    text-decoration: underline;
 }
