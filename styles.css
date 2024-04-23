@@ -86,21 +86,13 @@ p {
 .credits-container {
     text-align: center; /* Center align */
     margin-bottom: 20px; /* Bottom margin */
-    font-size: 14px; /* Font size */
-    margin-bottom: 5px; /* Bottom margin */
-    color: #666; /* Link color */
-    text-decoration: none; /* Remove underline */
+    
 }
 
 /* API link styles */
-.api-link {
+.api-link a {
     font-size: 14px; /* Font size */
     margin-bottom: 5px; /* Bottom margin */
-    color: #666; /* Link color */
-    text-decoration: none; /* Remove underline */
-}
-
-.api-link a {
     color: #666; /* Link color */
     text-decoration: none; /* Remove underline */
 }
