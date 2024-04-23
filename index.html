@@ -19,8 +19,8 @@
         </select>
         <input type="button" value="Get Sunrise and Sunset Times" onclick="getSunriseSunset()">
         <br>
-        <p><span class="sunrise">Sunrise:</span> <span id="sunrise"></span></p>
-        <p><span class="sunset">Sunset:</span> <span id="sunset"></span></p>
+        <p><span class="sunrise">Sunrise:</span> <span id="sunriseText"></span></p>
+        <p><span class="sunset">Sunset:</span> <span id="sunsetText"></span></p>
     </div>
     <p class="powered-by">Powered by <a href="https://sunrisesunset.io" target="_blank">SunriseSunset.io</a></p>
 
@@ -39,8 +39,8 @@
                 .then(data => {
                     var sunrise = data.results.sunrise;
                     var sunset = data.results.sunset;
-                    document.getElementById("sunrise").textContent = sunrise;
-                    document.getElementById("sunset").textContent = sunset;
+                    document.getElementById("sunriseText").textContent = sunrise;
+                    document.getElementById("sunsetText").textContent = sunset;
                 })
                 .catch(error => {
                     console.error('Error fetching sunrise and sunset times:', error);
