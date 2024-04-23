@@ -86,9 +86,12 @@ p {
 .footer {
     text-align: center; /* Center align footer */
     margin-top: 20px; /* Add top margin */
-    font-size: 14px; /* Set font size */
     color: #666; /* Set text color */
     clear: both; /* Clear floats */
+}
+
+.footer p {
+    font-size: 14px; /* Set font size for all paragraphs */
 }
 
 .footer a {
@@ -102,4 +105,5 @@ p {
 
 .created-by {
     margin-top: 10px; /* Add top margin */
+    font-size: 12px; /* Set font size for "created-by" paragraph */
 }
