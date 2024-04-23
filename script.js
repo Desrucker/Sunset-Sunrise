@@ -12,8 +12,8 @@ function getSunriseSunset() {
         .then(data => {
             var sunrise = data.results.sunrise;
             var sunset = data.results.sunset;
-            document.getElementById("sunriseText").textContent = sunrise;
-            document.getElementById("sunsetText").textContent = sunset;
+            document.getElementById("sunriseText").textContent = "Sunrise: " + sunrise;
+            document.getElementById("sunsetText").textContent = "Sunset: " + sunset;
         })
         .catch(error => {
             console.error('Error fetching sunrise and sunset times:', error);
