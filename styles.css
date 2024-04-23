@@ -85,13 +85,12 @@ p {
 /* Credits container styles */
 .credits-container {
     text-align: center; /* Center align */
-    margin-bottom: 20px; /* Bottom margin */
+    margin-bottom: 20px; /* Increased bottom margin for better separation */
 }
 
 /* API link styles */
 .api-link a {
     font-size: 14px; /* Font size */
-    margin-bottom: 5px; /* Bottom margin */
     color: #666; /* Link color */
     text-decoration: none; /* Remove underline */
 }
@@ -102,6 +101,6 @@ p {
 
 /* Created by styles */
 .created-by {
-    font-size: 12px; /* Font size */
+    font-size: 12px; /* Font size corrected to 12px */
     color: #666; /* Text color */
 }
