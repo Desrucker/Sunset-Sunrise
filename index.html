@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta tags for character set and viewport -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the page -->
     <title>Sunrise and Sunset Times</title>
+    <!-- Link to external CSS file -->
     <link rel="stylesheet" href="styles.css" type="text/css">
 </head>
 <body>
+    <!-- Main container -->
     <div class="container">
+        <!-- Title of the page -->
         <h1>Sunrise and Sunset Times</h1>
+        <!-- Location selection -->
         <div class="title">
             <label for="location">Select a State Capitol:</label>
         </div>
+        <!-- Dropdown menu for selecting location -->
         <select name="location" id="location">
+            <!-- Options with latitude and longitude values -->
             <option value="32.36681,-86.29997">Montgomery (AL)</option>
             <option value="58.30194,-134.41972">Juneau (AK)</option>
             <option value="33.44838,-112.07404">Phoenix (AZ)</option>
@@ -63,12 +71,18 @@
             <option value="43.07305,-89.40123">Madison (WI)</option>
             <option value="41.13998,-104.82025">Cheyenne (WY)</option>
         </select>
+        <!-- Button to get sunrise and sunset times -->
         <input class="submit" type="button" value="Get Sunrise and Sunset Times" onclick="getSunriseSunset()">
         <br>
+        <!-- Display sunrise and sunset times -->
         <p><span class="sunrise">Sunrise:</span> <span id="sunriseText"></span></p>
         <p><span class="sunset">Sunset:</span> <span id="sunsetText"></span></p>
     </div>
-    <p class="powered-by"><a href="https://sunrisesunset.io" target="_blank">Powered by SunriseSunset.io</a></p>
+    <!-- Link to external API -->
+    <p class="api-link"><a href="https://sunrisesunset.io" target="_blank">Powered by SunriseSunset.io</a></p>
+    <!-- Credits -->
+    <p class="created-by">Created by Dominic Rucker for SES141</p>
+    <!-- Link to external JavaScript file -->
     <script src="script.js"></script>
 </body>
 </html>
