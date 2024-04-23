@@ -82,34 +82,24 @@ p {
     font-weight: bold; /* Set font weight */
 }
 
-/* API link */
-.api-link {
-    text-align: center; /* Center align API link */
+/* Footer */
+.footer {
+    text-align: center; /* Center align footer */
     margin-top: 20px; /* Add top margin */
     font-size: 14px; /* Set font size */
     color: #666; /* Set text color */
     clear: both; /* Clear floats */
 }
 
-.api-link a {
+.footer a {
     color: #666; /* Set link color */
     text-decoration: none; /* Remove underline */
 }
 
-.api-link a:hover {
+.footer a:hover {
     text-decoration: underline; /* Underline link on hover */
 }
 
-/* Created by */
 .created-by {
-    text-align: center; /* Center align 'created by' */
-    margin-top: 20px; /* Add top margin */
-    font-size: 14px; /* Set font size */
-    color: #666; /* Set text color */
-    clear: both; /* Clear floats */
-}
-
-.created-by a {
-    color: #666; /* Set link color */
-    text-decoration: none; /* Remove underline */
+    margin-top: 10px; /* Add top margin */
 }
