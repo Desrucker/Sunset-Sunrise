@@ -33,6 +33,10 @@ This simple web application allows you to get the sunrise and sunset times for a
 
 ## Credits
 
-- This application was created by Dominic Rucker for SES141.
+- This application was created by Dominic Rucker.
 
 - It is powered by [SunriseSunset.io](https://sunrisesunset.io).
+
+## See it in Action
+
+You can see the website in action [here](https://desrucker.github.io/Sunset-Sunrise/).
