@@ -101,6 +101,7 @@ p {
 
 /* Created by styles */
 .my-code {
-    font-size: 12px; /* Font size corrected to 12px */
+    font-size: 14px; /* Font size corrected to 12px */
     color: #666; /* Text color */
+    text-decoration: none; /* Remove underline */
 }
